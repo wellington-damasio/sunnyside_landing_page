@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Sunnyside Agency Landing Page](https://your-live-site-url.com)
+- Live Site URL: [Sunnyside Agency Landing Page](https://wellington-damasio.github.io/sunnyside_landing_page/)
 
 ## My process
 
