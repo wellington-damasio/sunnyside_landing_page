@@ -61,7 +61,7 @@ ul {
 ----------------------------------------- */
 .header {
     position: relative;
-    background-image: url('/images/mobile/image-header.jpg');
+    background-image: url('images/mobile/image-header.jpg');
     background-size: cover;
     background-position: center;
     min-height: 65vh;
@@ -381,7 +381,7 @@ ul {
 /* Tablet */
 @media screen and (min-width: 45em) {
     .header {
-        background-image: url('/images/desktop/image-header.jpg');
+        background-image: url('images/desktop/image-header.jpg');
     }
 
     .mobile-menu__btn {
