@@ -1,22 +1,74 @@
-# Using the Figma design file
+# Frontend Mentor - Sunnyside agency landing page solution
 
-Using this design file will help you practice building projects in the same way professionals do. Seeing the details in the design will help you improve your accuracy when building projects and build projects faster.
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-[Figma](https://www.figma.com/) is an extremely popular design tool that has a generous free tier and can also be used on both Windows and Mac computers.
+## Table of contents
 
-To get started with Figma, [download the correct app for your operating system](https://www.figma.com/downloads/). You can then open the app and open the `.fig` design file by dragging it over the app and dropping it into the projects home screen.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-If you're going to use the Desktop App, you don't need to download the Font Installer from the downloads page. But if you're planning on using the Figma web app you should download and install it to ensure the fonts show up correctly.
+## Overview
 
-If you haven't used Figma before, here are a couple of great resources to get you up to speed: 
+### The challenge
 
-- [“Everything Developers Need To Know About Figma” article on Smashing Magazine](https://www.smashingmagazine.com/2020/09/figma-developers-guide/)
-- ["Introduction to Figma for Developers" video with Ryan Warner and Jason Lengstorf on Learn with Jason](https://www.learnwithjason.dev/introduction-to-figma-for-developers)
+Users should be able to:
 
----
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Interact with the mobile menu button and see navigation throgh that
 
-**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
+### Screenshot
 
----
+![](/images/screenshots/sunnyside.png)
+![](/images/screenshots/sunnyside-2.png)
 
-Thanks for being a PRO member. We hope you enjoy the challenge! 🙂
+### Links
+
+- Live Site URL: [Sunnyside Agency Landing Page](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+
+### What I learned
+
+Using `::before` to add the underline effects in the links
+```css
+.content > .link::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    width: calc(100% + 16px);
+    left: -8px;
+    height: 10px;
+    background-color: var(--color);
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0.3;
+    transition: opacity 200ms ease-out;
+}
+
+.content > .link:hover::before {
+    opacity: 0.7;
+}
+```
+
+### Continued development
+I want to use more Grid CSS in my development, sometimes Grid is way more efficient than Flexbox.
+I experimented with CUBE CSS in this project. But it didn't work so well, so I mostly sticked with BEM methodology
+
+## Author
+- Frontend Mentor - [@wellington-damasio](https://www.frontendmentor.io/profile/wellington-damasio)
